@@ -1,0 +1,24 @@
+{
+  "name": "lets-make-a-friend",
+  "version": "1.0.0",
+  "description": "A friend finding application, similar to dating apps.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baronvontoby/lets-make-a-friend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baronvontoby/lets-make-a-friend/issues"
+  },
+  "homepage": "https://github.com/baronvontoby/lets-make-a-friend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

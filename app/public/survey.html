@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Take the Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class='container'>
+        <a class="btn btn-primary btn-lg" href="./" role="button">Take Me Home</a>
+        <div class='row'>
+            <h1>Survey Questions</h1>
+        </div>
+        <div class='card'>
+            <div class='card-header'>About You</div>
+            <div class='card-body'>
+                <h5>Name</h5>
+                <input type="text" id='name' class="form-control" placeholder="name" aria-label="name" aria-describedby="addon-wrapping">
+                <h5>Link to Photo Image</h5>
+                <input type="text" id='photo' class="form-control" placeholder="photo" aria-label="photo" aria-describedby="addon-wrapping">
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like dogs, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like Pizza, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how often do you like to go out, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like video games, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q4">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like to be outside, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q5">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like working out, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q6">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you children, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q7">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like christmas, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q8">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like warm weather, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q9">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>On a scale of 1 to 5 how much do you like talking about politics, 1 being not much 5 being a lot?</label>
+                <select class="form-control" id="q10">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </form>
+        <button type='submit' class='btn btn-primary' id='add-btn'>Submit</button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('#add-btn').on('click', function(event){
+    var newFriend = {
+        name: $('#name').val().trim(),
+        url: $('#photo').val().trim(),
+        answers: [
+            $('#q1').val().trim(),
+            $('#q2').val().trim(),
+            $('#q3').val().trim(),
+            $('#q4').val().trim(),
+            $('#q5').val().trim(),
+            $('#q6').val().trim(),
+            $('#q7').val().trim(),
+            $('#q8').val().trim(),
+            $('#q9').val().trim(),
+            $('#q10').val().trim(),
+        ]
+    }
+    console.log(newFriend);
+    $.post('/api', newFriend, function(){
+        console.log('complete');
+    }).then(function(){
+        $.get('/api/newfriend', function(){
+                console.log('success');
+            });
+    });
+    
+})
+
+
+</script>
+</body>
+</html>
