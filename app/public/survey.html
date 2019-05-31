@@ -129,6 +129,8 @@
         
         <button type='button' class='btn btn-primary' id='friend'>See My New Friend</button>
 
+        <div class='row' id='new-friend'></div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -160,14 +162,17 @@ $('#add-btn').on('click', function(event){
     
 })
 
-function display (res){
-    var html
-}
-
 $('#friend').on('click', function(event){
     $.get('/api/newfriend', function(res, req){
             console.log('success');
             console.log(res);
+            let name = $('<h1>');
+            name.text(res[0].name)
+            $('#new-friend').append(name)
+            let picture= $('<img>');
+            picture.attr('src', res[0].url);
+            $('#new-friend').append(picture);
+            console.log('complete');
         });
 })
 
